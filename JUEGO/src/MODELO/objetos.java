@@ -1,0 +1,32 @@
+package JUEGO.src.MODELO;
+
+public class objetos {
+    private String nombre;
+    private String descripcion;
+    private int poder;
+
+    // Constructor
+    public objetos(String nombre, String descripcion, int poder) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.poder = poder;
+    }
+
+    // Getters
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public int getPoder() {
+        return poder;
+    }
+
+    // Método usar
+    public void usar() {
+        System.out.println("Usando el objeto: " + nombre);
+    }
+}
