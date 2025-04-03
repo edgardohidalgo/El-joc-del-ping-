@@ -1,4 +1,4 @@
 package JUEGO.src.MODELO;
 
-public class foca {
+public class foca  extends jugador {
 }

@@ -1,4 +1,4 @@
 package JUEGO.src.VISTA;
 
-public class juegovista {
+public class pantallaMenu {
 }

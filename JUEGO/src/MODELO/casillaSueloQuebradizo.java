@@ -2,8 +2,8 @@ package JUEGO.src.MODELO;
 
 import java.util.ArrayList;
 
-public class  casillaTrineo extends casilla {
-    public casillaTrineo(int posicion) {
+public class casillaSueloQuebradizo extends casilla {
+    public casillaSueloQuebradizo(int posicion) {
         super(posicion ,new ArrayList<>());
     }
     @Override

@@ -1,18 +1,22 @@
 package JUEGO.src.MODELO;
 
-public class personaje {
+public class jugador {
 
     private String nombre;
     private int posicion;
     private String color;
-    private Inventario inventario;
 
-    // Constructor
-    public personaje(String nombre, int posicion, String color, Inventario inventario) {
+    /**
+     *
+     * @param nombre
+     * @param posicion
+     * @param color
+     *
+     */
+    public jugador(String nombre, int posicion, String color) {
         this.nombre = nombre;
         this.posicion = posicion;
         this.color = color;
-        this.inventario = inventario;
     }
 
     // Getters y Setters
@@ -40,15 +44,6 @@ public class personaje {
         this.color = color;
     }
 
-    public Inventario getInventario() {
-        return inventario;
-    }
-
-    public void setInventario(Inventario inventario) {
-        this.inventario = inventario;
-    }
-
-    // Métodos
     public void moverse(int casillas) {
         this.posicion += casillas;
     }

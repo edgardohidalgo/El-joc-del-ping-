@@ -1,4 +1,13 @@
 package JUEGO.src.MODELO;
 
-public class casillaOso extends casillas {
+import java.util.ArrayList;
+
+public class casillaOso extends casilla {
+    public casillaOso(int posicion) {
+        super(posicion ,new ArrayList<>());
+    }
+@Override
+public void realizarAccion( jugador jugador) {
+        jugador.setPosicion(0);
+}
 }

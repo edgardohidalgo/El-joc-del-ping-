@@ -1,12 +1,12 @@
 package JUEGO.src.MODELO;
 
-public class objetos {
+public class item {
     private String nombre;
     private String descripcion;
     private int poder;
 
     // Constructor
-    public objetos(String nombre, String descripcion, int poder) {
+    public item(String nombre, String descripcion, int poder) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.poder = poder;

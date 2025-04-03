@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Inventario {
-    private List<String> objetos;
+    private ArrayList<String> objetos;
 
     // Constructor
     public Inventario() {
