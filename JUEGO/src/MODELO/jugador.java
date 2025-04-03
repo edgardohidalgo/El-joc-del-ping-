@@ -52,5 +52,16 @@ public abstract class jugador {
         System.out.println("Usando el item: " + item);
     }
 
+    public int tirarDado(int maximoDado) {
+        return (int)(Math.random() * maximoDado) + 1;
+    }
+
+    /**
+     * Método para mover la posición del jugador
+     * @param p Cantidad de posiciones a mover
+     */
+    public void moverPosicion(int p) {
+        this.posicion += p;
+    }
 
 }
