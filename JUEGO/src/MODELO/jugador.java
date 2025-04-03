@@ -1,6 +1,6 @@
 package JUEGO.src.MODELO;
 
-public class jugador {
+public abstract class jugador {
 
     private String nombre;
     private int posicion;
