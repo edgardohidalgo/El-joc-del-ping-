@@ -4,24 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Inventario {
-    private ArrayList<String> objetos;
+    private ArrayList<item> lista;
 
     // Constructor
-    public Inventario() {
-        this.objetos = new ArrayList<>();
+    public Inventario ( ArrayList<item> lista){
+        this.lista = lista;
     }
 
-    // Getter
-    public List<String> getObjetos() {
-        return objetos;
+    public ArrayList<item> getLista() {
+        return lista;
     }
 
-    // Métodos
-    public void agregarObjeto(String obj) {
-        objetos.add(obj);
-    }
-
-    public void eliminarObjeto(String obj) {
-        objetos.remove(obj);
+    public void setLista(ArrayList<item> lista) {
+        this.lista = lista;
     }
 }
