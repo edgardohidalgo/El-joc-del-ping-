@@ -1,6 +1,6 @@
 package JUEGO.src.MODELO;
 
-public class jugador {
+public abstract class jugador {
 
     private String nombre;
     private int posicion;
@@ -50,6 +50,18 @@ public class jugador {
 
     public void usarItem(String item) {
         System.out.println("Usando el item: " + item);
+    }
+
+    public int tirarDado(int maximoDado) {
+        return (int)(Math.random() * maximoDado) + 1;
+    }
+
+    /**
+     * Método para mover la posición del jugador
+     * @param p Cantidad de posiciones a mover
+     */
+    public void moverPosicion(int p) {
+        this.posicion += p;
     }
 
 
