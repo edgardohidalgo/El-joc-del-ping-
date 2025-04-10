@@ -1,3 +1,4 @@
+
 package JUEGO.src.bd;
 
 import java.sql.Connection;
@@ -13,8 +14,8 @@ public class conexioOracle {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             url = "jdbc:oracle:thin:@localhost:1521:XE";
-            user = "scott";
-            pass = "tiger";
+            user = "DM2425_PIN_GRUP07";
+            pass = "AAHRT07";
             conn = DriverManager.getConnection(url, user, pass);
             System.out.println("Se conecta con exito");
         } catch (Exception e) {
