@@ -3,11 +3,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "mainBD",
+            "request": "launch",
+            "mainClass": "JUEGO.src.bd.mainBD",
+            "projectName": "El-joc-del-ping-_2a843b1c"
+        },
+        {
+            "type": "java",
             "name": "Java Program",
             "request": "launch",
-            "mainClass": "Main",  // Aquí debes poner la clase principal de tu proyecto
+            "mainClass": "Main",
             "classPaths": [
-                "${workspaceFolder}/lib/ojdbc8.jar"  // Ruta al archivo ojdbc8.jar en la carpeta lib
+                "EL-JOC-DEL-PING-/lib/ojdbc8.jar"
             ]
         }
     ]
