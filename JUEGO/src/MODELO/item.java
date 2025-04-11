@@ -3,7 +3,7 @@ package JUEGO.src.MODELO;
 public class item {
     private String nombre;
 
-    private int cantidad ,
+    private int cantidad ;
 
     // Constructor
     public item(String nombre, int cantidad) {
