@@ -1,5 +1,7 @@
 package JUEGO.src.MODELO;
 
+import java.util.Collection;
+
 public class jugador {
 
     private String nombre;
@@ -18,6 +20,8 @@ public class jugador {
         this.posicion = posicion;
         this.color = color;
     }
+
+ 
 
     
     public String getNombre() {

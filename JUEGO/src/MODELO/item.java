@@ -27,4 +27,7 @@ public class item {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
+    // objetos que tienen
+    List
 }
