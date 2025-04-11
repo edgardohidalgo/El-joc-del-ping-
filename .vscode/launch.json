@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Java Program",
+            "request": "launch",
+            "mainClass": "Main",  // Aquí debes poner la clase principal de tu proyecto
+            "classPaths": [
+                "${workspaceFolder}/lib/ojdbc8.jar"  // Ruta al archivo ojdbc8.jar en la carpeta lib
+            ]
+        }
+    ]
+}
