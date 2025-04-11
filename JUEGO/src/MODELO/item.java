@@ -29,4 +29,7 @@ public class item {
     public void usar() {
         System.out.println("Usando el objeto: " + nombre);
     }
+
+    // objetos que tienen
+    List
 }
