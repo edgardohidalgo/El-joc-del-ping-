@@ -1,0 +1,85 @@
+Index: JUEGO/src/MODELO/item.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package JUEGO.src.MODELO;\r\n\r\npublic class item {\r\n    private String nombre;\r\n\r\n    private int cantidad ,\r\n\r\n    // Constructor\r\n    public item(String nombre, int cantidad) {\r\n        this.nombre = nombre;\r\n        this.cantidad = cantidad ;\r\n    }\r\n\r\n    // Getters\r\n    public String getNombre() {\r\n        return nombre;\r\n    }\r\n\r\n    public void setNombre(String nombre) {\r\n        this.nombre = nombre;\r\n    }\r\n\r\n    public int getCantidad() {\r\n        return cantidad;\r\n    }\r\n\r\n    public void setCantidad(int cantidad) {\r\n        this.cantidad = cantidad;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/JUEGO/src/MODELO/item.java b/JUEGO/src/MODELO/item.java
+--- a/JUEGO/src/MODELO/item.java	(revision 1264623c6af3601c76a3ba7acde41f37f624a4a7)
++++ b/JUEGO/src/MODELO/item.java	(date 1744389907058)
+@@ -27,4 +27,7 @@
+     public void setCantidad(int cantidad) {
+         this.cantidad = cantidad;
+     }
+-}
++
++    // objetos que tienen
++    List
++}
+\ No newline at end of file
+Index: JUEGO/src/MODELO/casillaSueloQuebradizo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package JUEGO.src.MODELO;\r\n\r\nimport java.util.ArrayList;\r\n\r\npublic class casillaSueloQuebradizo extends casilla {\r\n    public casillaSueloQuebradizo(int posicion) {\r\n        super(posicion ,new ArrayList<>());\r\n    }\r\n    @Override\r\n    public void realizarAccion( jugador jugador) {\r\n        jugador.setPosicion(0);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/JUEGO/src/MODELO/casillaSueloQuebradizo.java b/JUEGO/src/MODELO/casillaSueloQuebradizo.java
+--- a/JUEGO/src/MODELO/casillaSueloQuebradizo.java	(revision 1264623c6af3601c76a3ba7acde41f37f624a4a7)
++++ b/JUEGO/src/MODELO/casillaSueloQuebradizo.java	(date 1744389907057)
+@@ -10,4 +10,16 @@
+     public void realizarAccion( jugador jugador) {
+         jugador.setPosicion(0);
+     }
+-}
+\ No newline at end of file
++       int numObjectes = jugador.getInventari() .size();
++
++    if (item > 5)
++
++    {
++        System.out.println("El jugador " + jugador.getNombre() + " té més de 5 objectes i cau al terra trencadís. Retorna a l'inici.");
++        jugador.setPosicion(0);  // Retorna el jugador a la posició inicial.
++       } else if (numObjectes > 0) {
++           System.out.println("El jugador \" + jugador.getNombre() +")
++    }
++
++
++}
+Index: JUEGO/src/MODELO/jugador.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package JUEGO.src.MODELO;\r\n\r\npublic abstract class jugador {\r\n\r\n    private String nombre;\r\n    private int posicion;\r\n    private String color;\r\n\r\n    /**\r\n     *\r\n     * @param nombre\r\n     * @param posicion\r\n     * @param color\r\n     *\r\n     */\r\n    public jugador(String nombre, int posicion, String color) {\r\n        this.nombre = nombre;\r\n        this.posicion = posicion;\r\n        this.color = color;\r\n    }\r\n\r\n    // Getters y Setters\r\n    public String getNombre() {\r\n        return nombre;\r\n    }\r\n\r\n    public void setNombre(String nombre) {\r\n        this.nombre = nombre;\r\n    }\r\n\r\n    public int getPosicion() {\r\n        return posicion;\r\n    }\r\n\r\n    public void setPosicion(int posicion) {\r\n        this.posicion = posicion;\r\n    }\r\n\r\n    public String getColor() {\r\n        return color;\r\n    }\r\n\r\n    public void setColor(String color) {\r\n        this.color = color;\r\n    }\r\n\r\n    public void moverse(int casillas) {\r\n        this.posicion += casillas;\r\n    }\r\n\r\n    public void usarItem(String item) {\r\n        System.out.println(\"Usando el item: \" + item);\r\n    }\r\n\r\n    public int tirarDado(int maximoDado) {\r\n        return (int)(Math.random() * maximoDado) + 1;\r\n    }\r\n\r\n    /**\r\n     * Método para mover la posición del jugador\r\n     * @param p Cantidad de posiciones a mover\r\n     */\r\n    public void moverPosicion(int p) {\r\n        this.posicion += p;\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/JUEGO/src/MODELO/jugador.java b/JUEGO/src/MODELO/jugador.java
+--- a/JUEGO/src/MODELO/jugador.java	(revision 1264623c6af3601c76a3ba7acde41f37f624a4a7)
++++ b/JUEGO/src/MODELO/jugador.java	(date 1744390099467)
+@@ -1,6 +1,6 @@
+ package JUEGO.src.MODELO;
+ 
+-public abstract class jugador {
++public class jugador {
+ 
+     private String nombre;
+     private int posicion;
+@@ -52,17 +52,6 @@
+         System.out.println("Usando el item: " + item);
+     }
+ 
+-    public int tirarDado(int maximoDado) {
+-        return (int)(Math.random() * maximoDado) + 1;
+-    }
+-
+-    /**
+-     * Método para mover la posición del jugador
+-     * @param p Cantidad de posiciones a mover
+-     */
+-    public void moverPosicion(int p) {
+-        this.posicion += p;
+-    }
+ 
+ 
+ }
