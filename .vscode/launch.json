@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "mainBD",
+            "request": "launch",
+            "mainClass": "JUEGO.src.bd.mainBD",
+            "projectName": "El-joc-del-ping-_2a843b1c"
+        },
+        {
+            "type": "java",
+            "name": "Java Program",
+            "request": "launch",
+            "mainClass": "Main",
+            "classPaths": [
+                "EL-JOC-DEL-PING-/lib/ojdbc8.jar"
+            ]
+        }
+    ]
+}
