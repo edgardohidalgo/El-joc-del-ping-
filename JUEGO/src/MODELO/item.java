@@ -2,14 +2,13 @@ package JUEGO.src.MODELO;
 
 public class item {
     private String nombre;
-    private String descripcion;
-    private int poder;
+
+    private int cantidad ;
 
     // Constructor
-    public item(String nombre, String descripcion, int poder) {
+    public item(String nombre, int cantidad) {
         this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.poder = poder;
+        this.cantidad = cantidad ;
     }
 
     // Getters
@@ -17,16 +16,18 @@ public class item {
         return nombre;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public int getPoder() {
-        return poder;
+    public int getCantidad() {
+        return cantidad;
     }
 
-    // Método usar
-    public void usar() {
-        System.out.println("Usando el objeto: " + nombre);
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
+
+    // objetos que tienen
+    List
 }

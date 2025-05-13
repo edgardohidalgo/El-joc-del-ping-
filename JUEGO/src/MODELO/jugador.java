@@ -1,5 +1,7 @@
 package JUEGO.src.MODELO;
 
+import java.util.Collection;
+
 public class jugador {
 
     private String nombre;
@@ -19,7 +21,9 @@ public class jugador {
         this.color = color;
     }
 
-    // Getters y Setters
+ 
+
+    
     public String getNombre() {
         return nombre;
     }
